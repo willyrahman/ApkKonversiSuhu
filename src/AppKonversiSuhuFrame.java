@@ -1,11 +1,8 @@
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.KeyEvent;
 import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
-import javax.swing.Timer;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
@@ -45,7 +42,7 @@ public class AppKonversiSuhuFrame extends javax.swing.JFrame {
             public void changedUpdate(DocumentEvent e) {
                konversiOtomatis();
             }
-        }); 
+        });
             setVisible(true);
 
     }
@@ -262,19 +259,7 @@ public class AppKonversiSuhuFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-  private void updateConversion() {
-        // Menggunakan Timer untuk memberikan jeda setelah input
-        Timer timer = new Timer(500, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                // Hentikan timer setelah satu kali digunakan
-                ((Timer) e.getSource()).stop();
-                konversiOtomatis();
-            }
-        });
-        timer.setRepeats(false); // Timer hanya berjalan sekali
-        timer.start(); // Mulai timer
-    }
+  
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
       
@@ -322,13 +307,13 @@ public class AppKonversiSuhuFrame extends javax.swing.JFrame {
 
     private void jComboBox1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox1ItemStateChanged
         // TODO add your handling code here:
-          konversiOtomatis();
+         
                 
     }//GEN-LAST:event_jComboBox1ItemStateChanged
 
     private void jComboBox2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox2ItemStateChanged
         // TODO add your handling code here:
-                    konversiOtomatis();
+                    
                 
 
     }//GEN-LAST:event_jComboBox2ItemStateChanged
