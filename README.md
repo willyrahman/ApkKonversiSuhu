@@ -61,6 +61,6 @@ Aplikasi ini memungkinkan pengguna untuk:
 Willy Rahman 2210010103
 
 ## Demo
-![Demo GIF](https://github.com/willyrahman/ApkKonversiSuhu/blob/main/img/Demo%20apk%20konversisuhu%20tgs2.gif)
+![Demo GIF](https://github.com/willyrahman/ApkKonversiSuhu/blob/main/img/Demo%20tugas%202%20ApkKonversi%20suhu.gif))
 
 
