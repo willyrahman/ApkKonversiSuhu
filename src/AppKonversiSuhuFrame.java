@@ -333,20 +333,20 @@ public class AppKonversiSuhuFrame extends javax.swing.JFrame {
   private double konversiSuhu(double input, String from, String to) {
         double result = input;
 
-        if (from.equals("Celcisus")) {
+        if (from.equals("Celcius")) {
             if (to.equals("Fahrenheit")) result = input * 9/5 + 32;
             else if (to.equals("Reamur")) result = input * 4/5;
             else if (to.equals("Kelvin")) result = input + 273.15;
         } else if (from.equals("Fahrenheit")) {
-            if (to.equals("Celcisus")) result = (input - 32) * 5/9;
+            if (to.equals("Celcius")) result = (input - 32) * 5/9;
             else if (to.equals("Reamur")) result = (input - 32) * 4/9;
             else if (to.equals("Kelvin")) result = (input - 32) * 5/9 + 273.15;
         } else if (from.equals("Reamur")) {
-            if (to.equals("Celcisus")) result = input * 5/4;
+            if (to.equals("Celcius")) result = input * 5/4;
             else if (to.equals("Fahrenheit")) result = input * 9/4 + 32;
             else if (to.equals("Kelvin")) result = input * 5/4 + 273.15;
         } else if (from.equals("Kelvin")) {
-            if (to.equals("Celcisus")) result = input - 273.15;
+            if (to.equals("Celcius")) result = input - 273.15;
             else if (to.equals("Fahrenheit")) result = (input - 273.15) * 9/5 + 32;
             else if (to.equals("Reamur")) result = (input - 273.15) * 4/5;
         }
